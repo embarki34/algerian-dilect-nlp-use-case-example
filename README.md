@@ -3,45 +3,74 @@
 ## 1. Introduction
 
 ### Project Overview
-Provide a brief summary of the project and its objectives.
+Applying the results of my master's thesis in a real-world application as part of my first research paper.
 
 ### Purpose of the Document
-Explain the purpose and scope of the specification document.
+This document will serve as my documentation and technical markdown about the development of this project.
 
 ## 2. Project Scope
 
 ### Objectives
-List the primary goals and objectives of the application.
+- Create a mental health monitoring system for hospital patients with NLP capabilities.
+- Include entertainment and spiritual content to serve as a hub for all the patients.
 
 ### Stakeholders
-Identify the key stakeholders involved in the project.
+- Omar Embarki
+- Supervisor: Merim Alaifa
 
 ## 3. Functional Requirements
 
-### Features and Functionality
-Detail the features and functionalities the application must have.
+### Client Side
+- Login and Logout
+- Sentiment and adding comments
+- Chat with a chatbot to assess the emergency level
+- Random facts and Quran verses to keep the religious side up
+- Emergency call button
+
+### Admin Side
+- Patient management
+- By-patient comment management
+- By-patient chatbot messaging assessment
+- Emergency listener
+- Emergency history and response status
 
 ### User Stories or Use Cases
-Describe specific scenarios of how users will interact with the application.
+
+#### Client Side
+- As a patient, I want to log in and log out securely so that my information is protected.
+- As a patient, I want to add comments and receive sentiment analysis so that I can monitor my mental health.
+- As a patient, I want to chat with a chatbot to assess my emergency level and receive immediate assistance if needed.
+- As a patient, I want to receive random facts and Quran verses to maintain my spiritual well-being.
+- As a patient, I want to have access to an emergency call button so that I can get help quickly in critical situations.
+
+#### Admin Side
+- As an admin, I want to manage patient information so that all data is up to date and accurate.
+- As an admin, I want to manage comments by patients to monitor and respond to their needs.
+- As an admin, I want to assess chatbot messages by patients to evaluate the urgency of their situation.
+- As an admin, I want to listen to emergency calls and track their history and response status to ensure timely intervention.
 
 ## 4. Non-Functional Requirements
 
 ### Performance
-Specify the performance requirements, such as response time, throughput, etc.
+- The system should respond to user inputs within 2 seconds.
 
 ### Usability
-Outline the usability requirements, including design principles and accessibility considerations.
+- The interface should be user-friendly and accessible to patients with various levels of technical expertise.
 
 ### Reliability
-Define the reliability requirements, including availability, maintainability, and failure recovery.
+- The system should have an uptime of 99.9% to ensure availability for patients and administrators.
 
 ### Security
-Detail the security requirements, such as data protection, authentication, and authorization.
+- Implement secure authentication and authorization to protect patient data.
+- Ensure data encryption both in transit and at rest.
 
 ## 5. Technical Requirements
 
 ### Technology Stack
-List the technologies, frameworks, and tools to be used.
+- Frontend: Flutter
+- Backend: Flask RESTful API
+- Database: PostgreSQL
+- NLP: TensorFlow, Hugging Face
 
 ### System Architecture
 Provide an overview of the system architecture, including diagrams if necessary.
@@ -49,7 +78,8 @@ Provide an overview of the system architecture, including diagrams if necessary.
 ## 6. Data Requirements
 
 ### Database Design
-Describe the database structure and any data management requirements.
+- Tables for users, comments, and emergency history.
+- Relationships between users and their comments, as well as emergency events.
 
 ### Data Migration
 Detail any data migration needs from existing systems.
